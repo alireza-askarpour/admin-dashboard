@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleHideSideDrawer = (): void => setShowSideDrawer(false)
 
   return (
-    <header className="bg-[#161d30] fixed left-0 xl:left-64 top-0 right-0 px-4 sm:px-7 pt-5 pb-7">
+    <header className="bg-[#161d30] fixed left-0 top-0 right-0 xl:left-64 px-4 pt-5 pb-5 sm:px-7 z-30">
       <section className="flex items-center justify-between h-16 p-[14px] bg-[#283046] rounded-md">
         {/* Side Drawer */}
         <SideDrawer show={showSideDrawer} hideMenu={handleHideSideDrawer}>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <p className="text-[#d0d2d6] font-semibold tracking-wider text-[14px]">
                   John Doe
                 </p>
-                <span className="text-[11px] text-[#d0d2d6] tracking-widest leading-3">
+                <span className="text-[11px] text-[#d0d2d6] leading-3">
                   admin
                 </span>
               </div>

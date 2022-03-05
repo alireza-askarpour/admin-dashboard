@@ -8,8 +8,8 @@ interface ISideDrawerProps {
 
 const SideDrawer: FC<ISideDrawerProps> = ({ show, hideMenu, children }) => {
   const sideDrawer = show
-    ? 'w-full h-screen transition-all fixed inset-0 z-10 xl:hidden'
-    : 'w-full h-screen transition-all fixed inset-0 z-10 xl:hidden invisible'
+    ? 'w-full h-screen transition-all fixed inset-0 z-40 xl:hidden'
+    : 'w-full h-screen transition-all fixed inset-0 z-40 xl:hidden invisible'
 
   const sideDrawerMenu = show
     ? 'w-64 h-screen transition-all duration-300 fixed top-0 left-0 bottom-0 z-20'

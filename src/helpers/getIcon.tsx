@@ -10,6 +10,7 @@ import Sms from '../assets/icons/Sms'
 import Star from '../assets/icons/Star'
 import Task from '../assets/icons/Task'
 import Users from '../assets/icons/Users'
+import LogOut from '../assets/icons/LogOut'
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
@@ -37,6 +38,8 @@ const getIcon = (iconName: string) => {
       return <Close />
     case 'Award':
       return <Award/>
+    case 'LogOut':
+      return <LogOut/>
     default:
       throw new Error('Not found icon!')
   }
