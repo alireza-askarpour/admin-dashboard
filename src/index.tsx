@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 
 import App from './containers/App'
 
+import '@fontsource/montserrat'
 import './styles/globals.css'
+
 
 ReactDOM.render(
   <React.StrictMode>

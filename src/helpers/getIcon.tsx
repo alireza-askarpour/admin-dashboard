@@ -1,3 +1,4 @@
+import Award from '../assets/icons/Award'
 import Calendar from '../assets/icons/Calendar'
 import Chart from '../assets/icons/Chart'
 import Close from '../assets/icons/Close'
@@ -34,6 +35,8 @@ const getIcon = (iconName: string) => {
       return <Star />
     case 'Close':
       return <Close />
+    case 'Award':
+      return <Award/>
     default:
       throw new Error('Not found icon!')
   }
