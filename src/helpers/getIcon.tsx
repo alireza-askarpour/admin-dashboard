@@ -11,6 +11,11 @@ import Star from '../assets/icons/Star'
 import Task from '../assets/icons/Task'
 import Users from '../assets/icons/Users'
 import LogOut from '../assets/icons/LogOut'
+import Trash from '../assets/icons/Trash'
+import Check from '../assets/icons/Check'
+import MoreVertical from '../assets/icons/MoreVertical'
+import ChevronDown from '../assets/icons/ChevronDown'
+import ChevronUp from '../assets/icons/ChevronUp'
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
@@ -37,9 +42,19 @@ const getIcon = (iconName: string) => {
     case 'Close':
       return <Close />
     case 'Award':
-      return <Award/>
+      return <Award />
     case 'LogOut':
-      return <LogOut/>
+      return <LogOut />
+    case 'Trash':
+      return <Trash />
+    case 'Check':
+      return <Check />
+    case 'MoreVertical':
+      return <MoreVertical />
+    case 'ChevronDown':
+      return <ChevronDown />
+    case 'ChevronUp':
+      return <ChevronUp />
     default:
       throw new Error('Not found icon!')
   }

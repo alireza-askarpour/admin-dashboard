@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import getIcon from '../helpers/getIcon'
+import getIcon from '../../helpers/getIcon'
 
 interface IIconProps {
   name: string
@@ -8,9 +8,10 @@ interface IIconProps {
   height?: number
   color?: string
   className?: string
+  onClick?: () => void
 }
 
-const Icon: FC<IIconProps> = ({ name, width, height, color, className }) => {
+const Icon: FC<IIconProps> = ({ name, width, height, color, className, onClick }) => {
   const iconComponent = getIcon(name)
 
   return (
@@ -25,6 +26,7 @@ const Icon: FC<IIconProps> = ({ name, width, height, color, className }) => {
       strokeWidth="2"
       className={`feather feather-users ${className}`}
       viewBox="0 0 24 24"
+      onClick={onClick}
     >
       {iconComponent}
     </svg>

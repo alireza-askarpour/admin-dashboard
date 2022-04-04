@@ -1,8 +1,8 @@
-import Icon from '../../Icon'
+import Icon from '../../shared/Icon'
 
 const CongratulationsCard = () => {
   return (
-    <div className="relative">
+    <div className="relative h-full">
       <div className="h-full p-5 bg-gradient-to-r from-[#7367f0] to-[#7367f0b3] rounded-md flex flex-col items-center justify-center">
         <img src="/images/banner2.png" className="w-36 sm:w-48 absolute top-0 left-0" />
         <img src="/images/banner1.png" className="w-36 sm:w-48 absolute top-0 right-0" />

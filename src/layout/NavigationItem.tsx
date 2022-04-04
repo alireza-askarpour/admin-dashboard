@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import Icon from '../components/Icon'
+import Icon from '../components/shared/Icon'
 
 interface IItemProps {
   icon: string

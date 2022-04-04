@@ -4,7 +4,46 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply outline-none;
+}
+
 body {
   font-family: 'montserrat', sans-serif;
-  @apply bg-[#161d30]
+  @apply bg-[#161d30];
+}
+
+::-webkit-scrollbar {
+  @apply w-4 bg-[#283046];
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#283046];
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid #fff;
+  @apply rounded-full bg-gray-500 border-[#283046];
+}
+
+body::-webkit-scrollbar {
+  @apply w-4 bg-[#161d30];
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-[#161d30];
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 4px solid #fff;
+  @apply rounded-full bg-gray-500 border-[#161d30];
+}
+
+.task-checkbox:checked {
+  @apply bg-[#7367f0] border-[#7367f0];
+  box-shadow: 0 2px 4px 0 rgba(115, 103, 240, 0.4);
+}
+
+.task-checkbox:checked ~ .task-checkbox-icon {
+  @apply opacity-100;
 }

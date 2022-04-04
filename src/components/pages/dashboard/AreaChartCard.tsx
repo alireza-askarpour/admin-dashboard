@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import ReactApexChart from 'react-apexcharts'
 
-import Icon from '../../Icon'
+import Icon from '../../shared/Icon'
 
 interface ISeries {
   name: string

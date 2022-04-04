@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Icon from '../components/Icon'
+import Icon from '../components/shared/Icon'
 import SideDrawer from './SideDrawer'
 
 import { navbarRightItems } from '../constants/navbar_right_items'
