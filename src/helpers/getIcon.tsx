@@ -16,6 +16,13 @@ import Check from '../assets/icons/Check'
 import MoreVertical from '../assets/icons/MoreVertical'
 import ChevronDown from '../assets/icons/ChevronDown'
 import ChevronUp from '../assets/icons/ChevronUp'
+import FileText from '../assets/icons/FileText'
+import Send from '../assets/icons/Send'
+import Eye from '../assets/icons/Eye'
+import ArrowDownCircle from '../assets/icons/ArrowDownCircle'
+import Save from '../assets/icons/Save'
+import CheckCircle from '../assets/icons/CheckCircle'
+import Info from '../assets/icons/Info'
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
@@ -55,6 +62,20 @@ const getIcon = (iconName: string) => {
       return <ChevronDown />
     case 'ChevronUp':
       return <ChevronUp />
+    case 'FileText':
+      return <FileText />
+    case 'Send':
+      return <Send />
+    case 'Eye':
+      return <Eye />
+    case 'ArrowDownCircle':
+      return <ArrowDownCircle />
+    case 'Save':
+      return <Save />
+    case 'CheckCircle':
+      return <CheckCircle />
+    case 'Info':
+      return <Info />
     default:
       throw new Error('Not found icon!')
   }

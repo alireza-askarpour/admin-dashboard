@@ -20,9 +20,9 @@ export const navigationItems = [
   },
   {
     id: 4,
-    title: 'Contacts',
-    icon: 'Users',
-    route: '/contacts',
+    title: 'Invoice',
+    icon: 'FileText',
+    route: '/invoice',
   },
   {
     id: 5,

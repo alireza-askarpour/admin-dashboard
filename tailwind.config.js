@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -19,6 +21,20 @@ module.exports = {
       },
       transitionProperty: {
         inset: 'top left bottom right',
+      },
+    },
+    colors: {
+      ...colors,
+      ebonyClay: '#283046',
+      mirage: '#161d30',
+      indigo: {
+        main: '#7367f0',
+        second: '#9991f3',
+        third: '#7367f0b3',
+      },
+      gray: {
+        main: '#3B4253',
+        second: '#475569',
       },
     },
   },
