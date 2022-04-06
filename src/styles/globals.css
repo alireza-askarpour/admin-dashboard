@@ -47,3 +47,15 @@ body::-webkit-scrollbar-thumb {
 .task-checkbox:checked ~ .task-checkbox-icon {
   @apply opacity-100;
 }
+
+.record-dropdown-item {
+  @apply flex items-center transition duration-150 ease-in-out w-full px-4 py-2 hover:bg-[#7367f01f] cursor-pointer;
+}
+
+.record-dropdown-item:hover svg {
+  @apply stroke-indigo-main transition-colors duration-150 ease-in-out;
+}
+
+.record-dropdown-item:hover > span {
+  @apply text-indigo-main transition-colors duration-150 ease-in-out;
+}

@@ -23,6 +23,9 @@ import ArrowDownCircle from '../assets/icons/ArrowDownCircle'
 import Save from '../assets/icons/Save'
 import CheckCircle from '../assets/icons/CheckCircle'
 import Info from '../assets/icons/Info'
+import Edit from '../assets/icons/Edit'
+import Copy from '../assets/icons/Copy'
+import Download from '../assets/icons/Download'
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
@@ -76,6 +79,12 @@ const getIcon = (iconName: string) => {
       return <CheckCircle />
     case 'Info':
       return <Info />
+    case 'Download':
+      return <Download />
+    case 'Copy':
+      return <Copy />
+    case 'Edit':
+      return <Edit />
     default:
       throw new Error('Not found icon!')
   }
