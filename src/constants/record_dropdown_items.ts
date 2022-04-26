@@ -1,22 +1,26 @@
 export const recordDropdownItems = [
   {
-    id: 'download',
-    title: 'Download',
+    id: '1',
+    value: 'download',
+    label: 'Download',
     icon: 'Download',
   },
   {
-    id: 'edit',
-    title: 'Edit',
+    id: '2',
+    value: 'edit',
+    label: 'Edit',
     icon: 'Edit',
   },
   {
-    id: 'delete',
-    title: 'Delete',
+    id: '3',
+    value: 'delete',
+    label: 'Delete',
     icon: 'Trash',
   },
   {
-    id: 'dublicate',
-    title: 'Dublicate',
+    id: '4',
+    value: 'dublicate',
+    label: 'Dublicate',
     icon: 'Copy',
   },
 ]

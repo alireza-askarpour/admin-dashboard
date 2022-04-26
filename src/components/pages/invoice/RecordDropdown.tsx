@@ -1,30 +1,36 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 
-import Icon from '../../shared/Icon'
-
 import useOnClickOutside from '../../../hooks/useOnClickOutside'
+import Icon from '../../shared/Icon'
 
 import { recordDropdownItems } from '../../../constants/record_dropdown_items'
 
 interface IRecordDropdownProps {
-  onClick: (id: string) => void
+  onClick: (value: string) => void
+}
+
+interface IRecordDropdownItem {
+  id: string
+  value: string
+  label: string
+  icon: string
 }
 
 const RecordDropdown = (props: IRecordDropdownProps) => {
   const [open, setOpen] = useState(false)
-  const onOpen = () => setOpen(true)
-  const onClose = () => setOpen(false)
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
 
   const ref = useRef(null)
 
-  useOnClickOutside(ref, onClose)
+  useOnClickOutside(ref, handleClose)
 
   return (
     <div className="relative flex">
       <button
         className="text-white"
-        onClick={onOpen}
+        onClick={handleOpen}
         style={{
           pointerEvents: open ? 'none' : 'auto',
         }}
@@ -47,10 +53,16 @@ const RecordDropdown = (props: IRecordDropdownProps) => {
         }}
       >
         <ul className="w-full text-[#b4b7bd]">
-          {recordDropdownItems.map((item) => (
-            <li className="record-dropdown-item" onClick={() => props.onClick(item.id)}>
+          {recordDropdownItems.map((item: IRecordDropdownItem) => (
+            <li
+              className="record-dropdown-item"
+              onClick={() => {
+                props.onClick(item.value)
+                handleClose()
+              }}
+            >
               <Icon name={item.icon} color="#b4b7bd" width={14} height={14} />
-              <span className="text-sm ml-[7px] select-none">{item.title}</span>
+              <span className="text-sm ml-[7px] select-none">{item.label}</span>
             </li>
           ))}
         </ul>

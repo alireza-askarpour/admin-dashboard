@@ -1,4 +1,5 @@
 import Icon from '../../shared/Icon'
+import RecordDropdown from './RecordDropdown'
 
 interface IRecordProps {
   name: string
@@ -8,6 +9,7 @@ interface IRecordProps {
   issuedDate: string
   balance: string | number
   status: 'downloaded' | 'draft' | 'paid' | 'partial-payment' | 'past-due'
+  onClick: (value: string) => any
 }
 
 const getBadgeAvatarData = (status: string) => {
@@ -100,7 +102,7 @@ const Record = (props: IRecordProps) => {
         <div className="flex">
           <Icon name="Send" color="#b4b7bd" width={16} height={16} />
           <Icon name="Eye" color="#b4b7bd" width={16} height={16} className="mx-[14px]" />
-          <Icon name="MoreVertical" color="#b4b7bd" width={16} height={16} />
+          <RecordDropdown onClick={props.onClick} />
         </div>
       </td>
     </tr>
