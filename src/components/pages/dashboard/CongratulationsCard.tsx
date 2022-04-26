@@ -13,13 +13,13 @@ const CongratulationsCard = () => {
           </div>
         </div>
 
-        <h1 className="text-[26px] font-semibold text-white text-center mt-[7px] mb-3">
+        <h1 className="text-[26px] font-medium text-white text-center mt-[7px] mb-3">
           Congratulations John,
         </h1>
 
         <p className="mx-14 text-sm text-white text-center">
-          You have done <strong className="text-[13px]">57.6%</strong> more sales today.
-          Check your new badge in your profile.
+          You have done <strong>57.6%</strong> more sales today. Check your new badge in
+          your profile.
         </p>
       </div>
     </div>
