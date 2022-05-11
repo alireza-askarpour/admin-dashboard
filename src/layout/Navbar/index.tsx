@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
-import Icon from '../components/shared/Icon'
-import SideDrawer from './SideDrawer'
+import Icon from '../../components/shared/Icon'
+import SideDrawer from '../SideDrawer'
 
-import { navbarRightItems } from '../constants/navbar_right_items'
-import Navigation from './Navigation'
+import { navbarRightItems } from '../../constants/navbar_right_items'
+import Navigation from '../Navigation'
 
 const Navbar = () => {
   const [showSideDrawer, setShowSideDrawer] = useState(false)
-
+// 
   const handleShowSideDrawer = (): void => setShowSideDrawer(true)
   const handleHideSideDrawer = (): void => setShowSideDrawer(false)
 
