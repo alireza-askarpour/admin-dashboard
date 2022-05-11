@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-import Icon from '../../components/shared/Icon'
+import Dropdown from './Dropdown'
 import SideDrawer from '../SideDrawer'
-
-import { navbarRightItems } from '../../constants/navbar_right_items'
 import Navigation from '../Navigation'
+import Icon from '../../components/shared/Icon'
+
+import { mailList } from '../../constants/mail_list'
+import { navbarRightItems } from '../../constants/navbar_right_items'
 
 const Navbar = () => {
   const [showSideDrawer, setShowSideDrawer] = useState(false)
-// 
+  //
   const handleShowSideDrawer = (): void => setShowSideDrawer(true)
   const handleHideSideDrawer = (): void => setShowSideDrawer(false)
 
@@ -48,13 +50,16 @@ const Navbar = () => {
 
         {/* Right Items */}
         <div className="flex justify-center items-center">
-          <div className="mr-5">
-            <button className="p-[6px] rounded-md mr-1 relative">
-              <div className="absolute top-[-3px] right-[-1px] bg-[#7367f0] text-[11px] font-semibold w-[18px] h-[18px] text-white flex justify-center items-center rounded-full">
-                3
-              </div>
-              <Icon name="Sms" width={21} height={21} color="#d0d2d6" />
-            </button>
+          <div className="mr-5 flex items-center">
+            <Dropdown
+              dataList={mailList}
+              buttonText="Read all Mail"
+              menuBadge="3 New"
+              menuTitle="Mail"
+              toggleBadge="3"
+              toggleBg="#7367f0"
+              toggleIcon="Sms"
+            />
             <button className="p-[6px] rounded-md relative">
               <div className="absolute top-[-3px] right-[-1px] bg-[#ea5455] text-[11px] font-semibold w-[18px] h-[18px] text-white flex justify-center items-center rounded-full">
                 5
@@ -68,9 +73,7 @@ const Navbar = () => {
                 <p className="text-[#d0d2d6] font-semibold tracking-wider text-[14px]">
                   John Doe
                 </p>
-                <span className="text-[11px] text-[#d0d2d6] leading-3">
-                  admin
-                </span>
+                <span className="text-[11px] text-[#d0d2d6] leading-3">admin</span>
               </div>
               <img src="/images/user.png" className="w-10" alt="John Doe" />
             </div>
