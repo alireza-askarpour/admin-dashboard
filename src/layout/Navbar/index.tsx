@@ -7,6 +7,7 @@ import Icon from '../../components/shared/Icon'
 
 import { mailList } from '../../constants/mail_list'
 import { navbarRightItems } from '../../constants/navbar_right_items'
+import { notificationsList } from '../../constants/notifications_list'
 
 const Navbar = () => {
   const [showSideDrawer, setShowSideDrawer] = useState(false)
@@ -60,12 +61,16 @@ const Navbar = () => {
               toggleBg="#7367f0"
               toggleIcon="Sms"
             />
-            <button className="p-[6px] rounded-md relative">
-              <div className="absolute top-[-3px] right-[-1px] bg-[#ea5455] text-[11px] font-semibold w-[18px] h-[18px] text-white flex justify-center items-center rounded-full">
-                5
-              </div>
-              <Icon name="Notifications" width={21} height={21} color="#d0d2d6" />
-            </button>
+
+            <Dropdown
+              dataList={notificationsList}
+              buttonText="Read all Notifications"
+              menuBadge="5 New"
+              menuTitle="Mail"
+              toggleBadge="5"
+              toggleBg="#ea5455"
+              toggleIcon="Notifications"
+            />
           </div>
           <div>
             <div className="flex items-center justify-start cursor-pointer pr-3">
