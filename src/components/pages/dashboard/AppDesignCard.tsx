@@ -61,10 +61,7 @@ const AppDesignCard = () => {
           <h6 className="text-[#d0d2d6] font-semibold">$840.99</h6>
         </div>
       </div>
-      <button
-        type="button"
-        className="py-[9px] px-[21px] w-full text-white bg-[#7367f0] rounded-md font-semibold text-[13px] hover:shadow-2xl transition-shadow"
-      >
+      <button className="px-5 py-[9px] w-full bg-[#7367f0] text-white font-medium text-sm rounded-md hover:shadow-indigo transition-shadow duration-300">
         Join Team
       </button>
     </div>
