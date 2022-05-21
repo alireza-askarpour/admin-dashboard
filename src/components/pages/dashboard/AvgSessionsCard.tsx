@@ -1,4 +1,5 @@
 import ReactApexChart from 'react-apexcharts'
+import { classNames } from '../../../utils/classNames'
 
 const AvgSessionsCard = () => {
   return (
@@ -75,10 +76,15 @@ const AvgSessionsCard = () => {
             </h5>
           </div>
           <button
-            type="button"
-            className="py-[9px] px-[21px] w-full text-white bg-[#7367f0] rounded-md font-semibold"
+            className={classNames(
+              'px-5 py-[10px]',
+              'w-full bg-[#7367f0]',
+              'text-white font-medium text-sm',
+              'rounded-md hover:shadow-indigo',
+              'transition-shadow duration-300',
+            )}
           >
-            <span className="text-[13px] after:content-['>>']">View Details </span>
+            View Details
           </button>
         </div>
       </div>
