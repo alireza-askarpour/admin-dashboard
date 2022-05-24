@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Dropdown from './Dropdown'
 import SideDrawer from '../SideDrawer'
 import Navigation from '../Navigation'
+import DropdownUser from './DropdownUser'
 import Icon from '../../components/shared/Icon'
 
 import { mailList } from '../../constants/mail_list'
@@ -72,17 +73,7 @@ const Navbar = () => {
               toggleIcon="Notifications"
             />
           </div>
-          <div>
-            <div className="flex items-center justify-start cursor-pointer pr-3">
-              <div className="mr-2 flex flex-col items-end justify-center">
-                <p className="text-[#d0d2d6] font-semibold tracking-wider text-[14px]">
-                  John Doe
-                </p>
-                <span className="text-[11px] text-[#d0d2d6] leading-3">admin</span>
-              </div>
-              <img src="/images/user.png" className="w-10" alt="John Doe" />
-            </div>
-          </div>
+          <DropdownUser />
         </div>
       </section>
     </header>
