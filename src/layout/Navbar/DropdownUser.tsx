@@ -45,7 +45,7 @@ const DropdownUser = () => {
         style={{
           boxShadow: '0 4px 24px 0 rgb(0 0 0 / 24%)',
         }}
-        className="left-4 right-4 sm:left-7 sm:right-7 absolute md:right-0 md:left-[unset] md:w-40 z-20 mt-2 rounded-lg bg-ebonyClay overflow-hidden"
+        className="left-4 right-4 sm:left-7 sm:right-7 absolute md:right-0 md:left-[unset] md:top-11 md:w-40 z-20 mt-2 rounded-lg bg-ebonyClay overflow-hidden"
         initial="hide"
         ref={ref}
         animate={open ? 'show' : 'hide'}
