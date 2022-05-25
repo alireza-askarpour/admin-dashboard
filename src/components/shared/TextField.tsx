@@ -40,10 +40,6 @@ const TextField = ({
     onChange(e)
   }
 
-  const borderField = error
-    ? 'border-[#ea5455]'
-    : 'border-[#3b4253] focus:border-[#7367f0]'
-
   return (
     <div className="mb-[14px] flex flex-col items-start">
       <label htmlFor={id} className="text-xs mb-1">
@@ -61,7 +57,8 @@ const TextField = ({
           'px-[14px] py-[7px] outline-none rounded-[5px] w-full',
           'border bg-transparent transition-colors outline-0',
           'text-sm placeholder:text-[#676d7d]',
-          borderField,
+
+          error ? 'border-[#ea5455]' : 'border-[#3b4253] focus:border-[#7367f0]',
         )}
       />
 
