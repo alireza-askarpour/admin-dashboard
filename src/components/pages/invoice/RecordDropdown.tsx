@@ -7,7 +7,7 @@ import Icon from '../../shared/Icon'
 import { recordDropdownItems } from '../../../constants/record_dropdown_items'
 
 interface IRecordDropdownProps {
-  onClick: (value: string) => void
+  onClick?: (value: string) => void
 }
 
 interface IRecordDropdownItem {
@@ -53,11 +53,12 @@ const RecordDropdown = (props: IRecordDropdownProps) => {
         }}
       >
         <ul className="w-full text-[#b4b7bd]">
-          {recordDropdownItems.map((item: IRecordDropdownItem) => (
+          {recordDropdownItems.map((item: IRecordDropdownItem, index) => (
             <li
+              key={index}
               className="record-dropdown-item"
               onClick={() => {
-                props.onClick(item.value)
+                props.onClick && props.onClick(item.value)
                 handleClose()
               }}
             >

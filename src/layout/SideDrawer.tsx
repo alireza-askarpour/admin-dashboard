@@ -1,23 +1,29 @@
-import React, { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
-interface ISideDrawerProps {
+import { classNames } from '../utils/classNames'
+
+interface IProps {
   show: boolean
   hideMenu: () => void
   children: ReactNode
 }
 
-const SideDrawer: FC<ISideDrawerProps> = ({ show, hideMenu, children }) => {
-  const sideDrawer = show
-    ? 'w-full h-screen transition-all fixed inset-0 z-40 xl:hidden'
-    : 'w-full h-screen transition-all fixed inset-0 z-40 xl:hidden invisible'
-
-  const sideDrawerMenu = show
-    ? 'w-64 h-screen transition-all duration-300 fixed top-0 left-0 bottom-0 z-20'
-    : 'w-64 h-screen transition-all duration-300 fixed top-0 -left-full bottom-0 z-20'
-
+const SideDrawer = ({ show, hideMenu, children }: IProps) => {
   return (
-    <section className={sideDrawer}>
-      <section className={sideDrawerMenu}>{children}</section>
+    <section
+      className={classNames(
+        'w-full h-screen transition-all fixed inset-0 z-40 xl:hidden',
+        !show && 'invisible',
+      )}
+    >
+      <section
+        className={classNames(
+          'w-64 h-screen transition-all duration-300 fixed top-0 bottom-0 z-20',
+          show ? 'left-0' : '-left-full',
+        )}
+      >
+        {children}
+      </section>
       <section
         className="w-full h-screen fixed inset-0 bg-[#22292f80]"
         onClick={hideMenu}

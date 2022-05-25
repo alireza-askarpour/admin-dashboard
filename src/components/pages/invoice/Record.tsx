@@ -1,4 +1,5 @@
 import Icon from '../../shared/Icon'
+import Table from '../../shared/Table'
 import RecordDropdown from './RecordDropdown'
 
 interface IRecordProps {
@@ -9,7 +10,7 @@ interface IRecordProps {
   issuedDate: string
   balance: string | number
   status: 'downloaded' | 'draft' | 'paid' | 'partial-payment' | 'past-due'
-  onClick: (value: string) => any
+  onClick?: (value: string) => any
 }
 
 const getBadgeAvatarData = (status: string) => {
@@ -56,12 +57,12 @@ const Record = (props: IRecordProps) => {
   const badgeAvatar = getBadgeAvatarData(props.status)
 
   return (
-    <tr className="border-b bg-ebonyClay text-[#b4b7bd] border-gray-main whitespace-nowrap flex items-center justify-between">
-      <td className="py-3 px-7 grow-[1]">
+    <Table.Row>
+      <Table.Cell collapsing>
         <span className="text-indigo-main font-medium text-sm cursor-pointer">#5036</span>
-      </td>
+      </Table.Cell>
 
-      <td className="py-3 px-7 grow-[1]">
+      <Table.Cell collapsing>
         <div
           className={`w-8 h-8 grid place-content-center rounded-full ${badgeAvatar.bg}`}
         >
@@ -72,9 +73,9 @@ const Record = (props: IRecordProps) => {
             height={14}
           />
         </div>
-      </td>
+      </Table.Cell>
 
-      <td className="py-3 px-7 grow-[4]">
+      <Table.Cell>
         <div className="flex items-center">
           <div className="mr-3 w-8 h-8">
             <img src={props.image} alt={props.name} className="w-8 h-8" />
@@ -84,28 +85,28 @@ const Record = (props: IRecordProps) => {
             <small className="text-xs text-[#676d7d]">{props.email}</small>
           </div>
         </div>
-      </td>
+      </Table.Cell>
 
-      <td className="py-3 px-7 grow-[1]">
+      <Table.Cell collapsing>
         <span className="text-sm">${props.total}</span>
-      </td>
+      </Table.Cell>
 
-      <td className="py-3 px-7 grow-[1]">
+      <Table.Cell collapsing>
         <span className="text-sm">{props.issuedDate}</span>
-      </td>
+      </Table.Cell>
 
-      <td className="py-3 px-7 grow-[1]">
+      <Table.Cell collapsing>
         <span className="text-sm">${props.balance}</span>
-      </td>
+      </Table.Cell>
 
-      <td className="py-3 px-7 grow-[1]">
+      <Table.Cell collapsing>
         <div className="flex">
           <Icon name="Send" color="#b4b7bd" width={16} height={16} />
           <Icon name="Eye" color="#b4b7bd" width={16} height={16} className="mx-[14px]" />
-          <RecordDropdown onClick={props.onClick} />
+          <RecordDropdown />
         </div>
-      </td>
-    </tr>
+      </Table.Cell>
+    </Table.Row>
   )
 }
 

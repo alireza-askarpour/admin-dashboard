@@ -26,6 +26,7 @@ import Info from '../assets/icons/Info'
 import Edit from '../assets/icons/Edit'
 import Copy from '../assets/icons/Copy'
 import Download from '../assets/icons/Download'
+import TrendingUp from '../assets/icons/TrendingUp'
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
@@ -85,6 +86,8 @@ const getIcon = (iconName: string) => {
       return <Copy />
     case 'Edit':
       return <Edit />
+    case 'TrendingUp':
+      return <TrendingUp />
     default:
       throw new Error('Not found icon!')
   }
