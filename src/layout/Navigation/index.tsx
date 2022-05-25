@@ -1,48 +1,42 @@
-import React, { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Icon from '../components/shared/Icon'
 
 import NavigationList from './NavigationList'
+import Icon from '../../components/shared/Icon'
+import { classNames } from '../../utils/classNames'
 
-interface INavigationProps {
+interface IProps {
   sideDrawerMenu?: boolean
   closeMenu?: () => void
 }
 
-const Navigation: FC<INavigationProps> = ({ sideDrawerMenu, closeMenu }) => {
+const Navigation = ({ sideDrawerMenu, closeMenu }: IProps) => {
   const navigate = useNavigate()
 
   const handleLogoClick = () => navigate('/')
 
-  const navigation = sideDrawerMenu
-    ? 'w-64 h-full bg-[#283046] z-40'
-    : 'w-64 h-full bg-[#283046] fixed top-0 left-0 hidden xl:inline-block'
-
   return (
-    <section className={navigation}>
+    <section
+      className={classNames(
+        'w-64 h-full bg-[#283046]',
+        sideDrawerMenu ? 'z-40' : 'fixed top-0 left-0 hidden xl:inline-block',
+      )}
+    >
       {/* Logo */}
-      {sideDrawerMenu ? (
-        <div className="flex items-center justify-between py-6 px-6">
-          <div
-            className="flex items-center justify-start cursor-pointer"
-            onClick={handleLogoClick}
-          >
-            <img src="/images/logo.svg" alt="Logo" className="w-9" />
-            <span className="text-[#7367f0] text-lg ml-3 font-bold">Vuexy</span>
-          </div>
-          <div className="cursor-pointer" onClick={closeMenu}>
-            <Icon name="Close" color="#7367f0" />
-          </div>
-        </div>
-      ) : (
+
+      <div className="flex items-center justify-between py-6 px-6">
         <div
-          className="flex items-center justify-start my-6 mx-6 cursor-pointer"
+          className="flex items-center justify-start cursor-pointer"
           onClick={handleLogoClick}
         >
           <img src="/images/logo.svg" alt="Logo" className="w-9" />
-          <span className="text-[#7367f0] text-lg ml-3 font-bold">Vuexy</span>
+          <span className="text-[#7367f0] text-xl ml-3 font-semibold">Vuexy</span>
         </div>
-      )}
+        {sideDrawerMenu && (
+          <div className="cursor-pointer" onClick={closeMenu}>
+            <Icon name="Close" color="#7367f0" />
+          </div>
+        )}
+      </div>
 
       {/* Navigation List Items */}
       <div>
@@ -51,9 +45,7 @@ const Navigation: FC<INavigationProps> = ({ sideDrawerMenu, closeMenu }) => {
             Items
           </p>
         </div>
-        <div>
-          <NavigationList />
-        </div>
+        <NavigationList />
       </div>
 
       {/* User Info */}
