@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import SimpleBar from 'simplebar-react'
 
 import Navbar from './Navbar'
 import Navigation from './Navigation'
