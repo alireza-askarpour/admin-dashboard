@@ -1,0 +1,19 @@
+.table {
+  @apply w-full bg-[#283046];
+}
+
+.tableRow:last-of-type .tableCell {
+  border-bottom: none !important;
+}
+
+.headerCell {
+  @apply py-3 px-7 text-xs text-[#d0d2d6] bg-[#343d55] font-semibold text-left uppercase select-none transition-colors duration-200;
+}
+
+.tableCell {
+  @apply py-3 px-7 text-sm text-[#b4b7bd] bg-[#283046] border-b border-b-[#3b4253];
+}
+
+.collapsing {
+  @apply w-[1px] whitespace-nowrap;
+}
