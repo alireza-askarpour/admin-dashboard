@@ -3,6 +3,7 @@ import Table from '../../shared/Table'
 import RecordDropdown from './RecordDropdown'
 
 interface IRecordProps {
+  id: string
   name: string
   email: string
   image: string
@@ -59,7 +60,9 @@ const Record = (props: IRecordProps) => {
   return (
     <Table.Row>
       <Table.Cell collapsing>
-        <span className="text-indigo-main font-medium text-sm cursor-pointer">#5036</span>
+        <span className="text-indigo-main font-medium text-sm cursor-pointer">
+          {props.id}
+        </span>
       </Table.Cell>
 
       <Table.Cell collapsing>

@@ -6,6 +6,18 @@ export const navigationItems = [
     route: '/',
   },
   {
+    id: 5,
+    title: 'ToDo',
+    icon: 'Task',
+    route: '/todo',
+  },
+  {
+    id: 4,
+    title: 'Invoice',
+    icon: 'FileText',
+    route: '/invoice',
+  },
+  {
     id: 2,
     title: 'Calendar',
     icon: 'Calendar',
@@ -17,17 +29,5 @@ export const navigationItems = [
     icon: 'Sms',
     route: '/mail',
     badge: 3,
-  },
-  {
-    id: 4,
-    title: 'Invoice',
-    icon: 'FileText',
-    route: '/invoice',
-  },
-  {
-    id: 5,
-    title: 'ToDo',
-    icon: 'Task',
-    route: '/todo',
   },
 ]
