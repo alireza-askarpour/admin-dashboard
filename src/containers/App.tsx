@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Layout from '../layout/Layout'
 
-import { AddTodoModealProvider } from '../providers/addTodoModeal'
+import { AddTodoModealProvider } from '../providers/AddTodoModeal'
 
 import { routes } from '../routes'
 

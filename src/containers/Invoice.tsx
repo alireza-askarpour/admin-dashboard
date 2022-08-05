@@ -1,6 +1,6 @@
-import Table from '../components/shared/Table'
-import Record from '../components/pages/invoice/Record'
-import Icon from '../components/shared/Icon'
+import Table from '../components/Shared/Table'
+import Record from '../components/Pages/Invoice/Record'
+import Icon from '../components/Shared/Icon'
 
 import { INVOICE_LIST } from '../constants/invoice_list'
 

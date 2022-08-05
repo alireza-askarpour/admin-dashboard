@@ -1,4 +1,4 @@
-import Icon from '../../shared/Icon'
+import Icon from '../../Shared/Icon'
 
 const CongratulationsCard = () => {
   return (

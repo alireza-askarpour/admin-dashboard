@@ -1,7 +1,7 @@
 import { MouseEvent } from 'react'
 
 import Badge from './Badge'
-import Checkbox from '../../shared/Checkbox'
+import Checkbox from '../../Shared/Checkbox'
 
 import { ITodoItem } from '../../../store/state'
 

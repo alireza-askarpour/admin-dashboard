@@ -5,7 +5,7 @@ import AddTodoModal from './AddTodoModal'
 
 import { classNames } from '../../../utils/classNames'
 
-import { useAddTodoModal } from '../../../providers/addTodoModeal'
+import { useAddTodoModal } from '../../../providers/AddTodoModeal'
 
 import { filterTodoListAction } from '../../../store/actions/todo'
 

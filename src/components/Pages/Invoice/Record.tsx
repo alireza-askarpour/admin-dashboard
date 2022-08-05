@@ -1,5 +1,5 @@
-import Icon from '../../shared/Icon'
-import Table from '../../shared/Table'
+import Icon from '../../Shared/Icon'
+import Table from '../../Shared/Table'
 import RecordDropdown from './RecordDropdown'
 
 interface IRecordProps {

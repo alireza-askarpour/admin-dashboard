@@ -1,8 +1,8 @@
 import { FC, useCallback, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
-import TodoSidebar from '../components/pages/todo/TodoSidebar'
-import TodoContent from '../components/pages/todo/TodoContent'
+import TodoSidebar from '../components/Pages/Todo/TodoSidebar'
+import TodoContent from '../components/Pages/Todo/TodoContent'
 
 import { ITodoItem } from '../store/state'
 import { classNames } from '../utils/classNames'

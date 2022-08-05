@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 
 import useOnClickOutside from '../../../hooks/useOnClickOutside'
-import Icon from '../../shared/Icon'
+import Icon from '../../Shared/Icon'
 
 import { recordDropdownItems } from '../../../constants/record_dropdown_items'
 

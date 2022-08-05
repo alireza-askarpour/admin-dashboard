@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 
 import NavigationList from './NavigationList'
-import Icon from '../../components/shared/Icon'
+import Icon from '../../components/Shared/Icon'
 import { classNames } from '../../utils/classNames'
 
 interface IProps {

@@ -1,11 +1,11 @@
 import { useState, useEffect, ChangeEvent, SyntheticEvent } from 'react'
 import { useDispatch } from 'react-redux'
 
-import Icon from '../../shared/Icon'
-import Textarea from '../../shared/Textarea'
-import TextField from '../../shared/TextField'
-import MultiSelect from '../../shared/MultiSelect'
-import SidebarModal from '../../shared/SidebarModal'
+import Icon from '../../Shared/Icon'
+import Textarea from '../../Shared/Textarea'
+import TextField from '../../Shared/TextField'
+import MultiSelect from '../../Shared/MultiSelect'
+import SidebarModal from '../../Shared/SidebarModal'
 
 import { classNames } from '../../../utils/classNames'
 

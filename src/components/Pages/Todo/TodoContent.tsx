@@ -2,10 +2,10 @@ import { ChangeEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import TodoListItem from './TodoItem'
-import Icon from '../../shared/Icon'
+import Icon from '../../Shared/Icon'
 import EditTodoModal from './EditTodoModal'
 import TodoSidebar from './TodoSidebar'
-import SidebarModal from '../../shared/SidebarModal'
+import SidebarModal from '../../Shared/SidebarModal'
 
 import { ITodoItem } from '../../../store/state'
 import { checkedTaskAction, searchTaskAction } from '../../../store/actions/todo'

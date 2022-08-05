@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import Icon from '../../shared/Icon'
+import Icon from '../../Shared/Icon'
 
 import { classNames } from '../../../utils/classNames'
 
