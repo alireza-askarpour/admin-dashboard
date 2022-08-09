@@ -1,7 +1,6 @@
 import { ChangeEvent } from 'react'
-
-import { classNames } from '../../utils/classNames'
-import { isEmptyString } from '../../utils/validations'
+import { classNames } from 'utils/classNames'
+import { isEmptyString } from 'utils/validations'
 
 interface ITextFieldProps {
   id: string

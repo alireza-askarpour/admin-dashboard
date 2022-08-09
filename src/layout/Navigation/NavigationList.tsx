@@ -1,8 +1,6 @@
 import { useLocation } from 'react-router-dom'
-
+import { navigationItems } from 'constants/navigation_items'
 import NavigationItem from './NavigationItem'
-
-import { navigationItems } from '../../constants/navigation_items'
 
 const NavigationList = () => {
   const { pathname } = useLocation()

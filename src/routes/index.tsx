@@ -1,8 +1,8 @@
-import Dashboard from '../containers/Dashboard'
-import Calendar from '../containers/Calendar'
-import Mail from '../containers/Mail'
-import Invoice from '../containers/Invoice'
-import ToDo from '../containers/ToDo'
+import Dashboard from 'containers/Dashboard'
+import Calendar from 'containers/Calendar'
+import Mail from 'containers/Mail'
+import Invoice from 'containers/Invoice'
+import ToDo from 'containers/ToDo'
 
 export const routes = [
   {

@@ -3,19 +3,16 @@ import { useDispatch } from 'react-redux'
 import { v4 as uuidv4 } from 'uuid'
 import moment from 'moment'
 
-import Icon from '../../Shared/Icon'
-import Textarea from '../../Shared/Textarea'
-import TextField from '../../Shared/TextField'
-import MultiSelect from '../../Shared/MultiSelect'
+import { useAddTodoModal } from 'providers/AddTodoModeal'
+import { addTaskAction } from 'store/actions/todo'
+import { classNames } from 'utils/classNames'
+import { Tags } from 'store/state'
+
 import SidebarModal from '../../Shared/SidebarModal'
-
-import { addTaskAction } from '../../../store/actions/todo'
-
-import { useAddTodoModal } from '../../../providers/AddTodoModeal'
-
-import { classNames } from '../../../utils/classNames'
-
-import { Tags } from '../../../store/state'
+import MultiSelect from '../../Shared/MultiSelect'
+import TextField from '../../Shared/TextField'
+import Textarea from '../../Shared/Textarea'
+import Icon from '../../Shared/Icon'
 
 const selectOptions = ['team', 'low', 'medium', 'high', 'update']
 

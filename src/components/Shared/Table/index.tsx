@@ -1,7 +1,5 @@
 import { Children } from 'react'
-
-import { classNames } from '../../../utils/classNames'
-
+import { classNames } from 'utils/classNames'
 import styles from './table.module.css'
 
 type IProps = {

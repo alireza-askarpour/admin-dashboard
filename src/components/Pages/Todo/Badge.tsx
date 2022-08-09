@@ -1,6 +1,5 @@
-import { Tags } from '../../../store/state'
-
-import { classNames } from '../../../utils/classNames'
+import { Tags } from 'store/state'
+import { classNames } from 'utils/classNames'
 
 interface IBadgeProps {
   text: Tags

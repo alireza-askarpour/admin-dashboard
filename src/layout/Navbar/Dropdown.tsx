@@ -1,8 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-
-import useOnClickOutside from '../../hooks/useOnClickOutside'
-import Icon from '../../components/Shared/Icon'
+import useOnClickOutside from 'hooks/useOnClickOutside'
+import Icon from 'components/Shared/Icon'
 
 interface IProps {
   dataList: object[]

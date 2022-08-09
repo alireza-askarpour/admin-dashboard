@@ -1,9 +1,8 @@
 import { useRef } from 'react'
-
-import Icon from '../Icon'
+import { classNames } from 'utils/classNames'
 import SelectItem from './SelectItem'
+import Icon from '../Icon'
 
-import { classNames } from '../../../utils/classNames'
 
 const handleClickOutside = (contentRef: any, toggleRef: any) => {
   document.addEventListener('click', (e: any) => {

@@ -1,10 +1,8 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-
-import useOnClickOutside from '../../../hooks/useOnClickOutside'
+import useOnClickOutside from 'hooks/useOnClickOutside'
+import { recordDropdownItems } from 'constants/record_dropdown_items'
 import Icon from '../../Shared/Icon'
-
-import { recordDropdownItems } from '../../../constants/record_dropdown_items'
 
 interface IRecordDropdownProps {
   onClick?: (value: string) => void

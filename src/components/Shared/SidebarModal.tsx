@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
-
-import { classNames } from '../../utils/classNames'
+import { classNames } from 'utils/classNames'
 
 interface ISidebarTaskHandlerProps {
   isOpen: boolean

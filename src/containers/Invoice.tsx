@@ -1,8 +1,7 @@
-import Table from '../components/Shared/Table'
-import Record from '../components/Pages/Invoice/Record'
-import Icon from '../components/Shared/Icon'
-
-import { INVOICE_LIST } from '../constants/invoice_list'
+import { INVOICE_LIST } from 'constants/invoice_list'
+import Table from 'components/Shared/Table'
+import Record from 'components/Pages/Invoice/Record'
+import Icon from 'components/Shared/Icon'
 
 const Invoice = () => {
   return (

@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-
+import { classNames } from 'utils/classNames'
 import NavigationList from './NavigationList'
-import Icon from '../../components/Shared/Icon'
-import { classNames } from '../../utils/classNames'
+import Icon from 'components/Shared/Icon'
 
 interface IProps {
   sideDrawerMenu?: boolean

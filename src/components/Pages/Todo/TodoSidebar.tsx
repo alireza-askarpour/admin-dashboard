@@ -1,15 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux'
 
+import { classNames } from 'utils/classNames'
+import { useAddTodoModal } from 'providers/AddTodoModeal'
+import { filterTodoListAction } from 'store/actions/todo'
+import { listGroupFilters, listGroupLabels } from 'constants/todo_list_group'
+
 import ListGroupItem from './ListGroupItem'
 import AddTodoModal from './AddTodoModal'
-
-import { classNames } from '../../../utils/classNames'
-
-import { useAddTodoModal } from '../../../providers/AddTodoModeal'
-
-import { filterTodoListAction } from '../../../store/actions/todo'
-
-import { listGroupFilters, listGroupLabels } from '../../../constants/todo_list_group'
 
 interface ITodoSidebarProps {
   width?: boolean

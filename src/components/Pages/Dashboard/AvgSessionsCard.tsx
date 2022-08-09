@@ -1,5 +1,5 @@
 import ReactApexChart from 'react-apexcharts'
-import { classNames } from '../../../utils/classNames'
+import { classNames } from 'utils/classNames'
 
 const AvgSessionsCard = () => {
   return (

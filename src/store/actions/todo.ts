@@ -1,5 +1,4 @@
 import { Dispatch } from 'redux'
-
 import * as types from '../types'
 import { ITodoItem, IRootState } from '../state'
 

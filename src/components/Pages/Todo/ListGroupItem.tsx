@@ -1,8 +1,6 @@
 import { FC } from 'react'
-
 import Icon from '../../Shared/Icon'
-
-import { classNames } from '../../../utils/classNames'
+import { classNames } from 'utils/classNames'
 
 interface IListGroupItem {
   icon?: string

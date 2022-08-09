@@ -1,6 +1,5 @@
 import { FC } from 'react'
-
-import getIcon from '../../helpers/getIcon'
+import getIcon from 'helpers/getIcon'
 
 interface IIconProps {
   name: string

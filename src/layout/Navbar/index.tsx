@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
+import { mailList } from 'constants/mail_list'
+import { navbarRightItems } from 'constants/navbar_right_items'
+import { notificationsList } from 'constants/notifications_list'
+
 import Dropdown from './Dropdown'
 import SideDrawer from '../SideDrawer'
 import Navigation from '../Navigation'
 import DropdownUser from './DropdownUser'
-import Icon from '../../components/Shared/Icon'
-
-import { mailList } from '../../constants/mail_list'
-import { navbarRightItems } from '../../constants/navbar_right_items'
-import { notificationsList } from '../../constants/notifications_list'
+import Icon from 'components/Shared/Icon'
 
 const Navbar = () => {
   const [showSideDrawer, setShowSideDrawer] = useState(false)

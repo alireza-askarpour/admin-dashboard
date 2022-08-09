@@ -1,16 +1,15 @@
 import { useState, useEffect, ChangeEvent, SyntheticEvent } from 'react'
 import { useDispatch } from 'react-redux'
 
+import { editTaskAction, removeTaskAction } from 'store/actions/todo'
+import { ITodoItem } from 'store/state'
+import { classNames } from 'utils/classNames'
+
 import Icon from '../../Shared/Icon'
 import Textarea from '../../Shared/Textarea'
 import TextField from '../../Shared/TextField'
 import MultiSelect from '../../Shared/MultiSelect'
 import SidebarModal from '../../Shared/SidebarModal'
-
-import { classNames } from '../../../utils/classNames'
-
-import { ITodoItem } from '../../../store/state'
-import { editTaskAction, removeTaskAction } from '../../../store/actions/todo'
 
 const selectOptions = ['team', 'low', 'medium', 'high', 'update']
 

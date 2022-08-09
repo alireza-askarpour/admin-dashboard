@@ -1,8 +1,6 @@
 import { useRef, Ref } from 'react'
-
+import { classNames } from 'utils/classNames'
 import Icon from '../Icon'
-
-import { classNames } from '../../../utils/classNames'
 
 interface ISelectItemProps {
   title: string

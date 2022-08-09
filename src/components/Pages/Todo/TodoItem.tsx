@@ -1,11 +1,10 @@
 import { MouseEvent } from 'react'
 
+import { ITodoItem } from 'store/state'
+import { classNames } from 'utils/classNames'
+
 import Badge from './Badge'
 import Checkbox from '../../Shared/Checkbox'
-
-import { ITodoItem } from '../../../store/state'
-
-import { classNames } from '../../../utils/classNames'
 
 interface ITodoListItemProps {
   todoItem: ITodoItem

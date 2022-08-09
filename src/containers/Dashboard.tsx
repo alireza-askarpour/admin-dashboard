@@ -1,11 +1,11 @@
 // components
-import AppDesignCard from '../components/Pages/Dashboard/AppDesignCard'
-import AreaChartCard from '../components/Pages/Dashboard/AreaChartCard'
-import AvgSessionsCard from '../components/Pages/Dashboard/AvgSessionsCard'
-import CongratulationsCard from '../components/Pages/Dashboard/CongratulationsCard'
-import SalesCard from '../components/Pages/Dashboard/SalesCard'
-import SupportTrackerCard from '../components/Pages/Dashboard/SupportTrackerCard'
-import UserTimelineCard from '../components/Pages/Dashboard/UserTimelineCard'
+import AppDesignCard from 'components/Pages/Dashboard/AppDesignCard'
+import AreaChartCard from 'components/Pages/Dashboard/AreaChartCard'
+import AvgSessionsCard from 'components/Pages/Dashboard/AvgSessionsCard'
+import CongratulationsCard from 'components/Pages/Dashboard/CongratulationsCard'
+import SalesCard from 'components/Pages/Dashboard/SalesCard'
+import SupportTrackerCard from 'components/Pages/Dashboard/SupportTrackerCard'
+import UserTimelineCard from 'components/Pages/Dashboard/UserTimelineCard'
 
 const Dashboard = () => {
   return (

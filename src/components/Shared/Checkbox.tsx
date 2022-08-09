@@ -1,8 +1,6 @@
 import { MouseEvent, Ref, useRef } from 'react'
-
+import { classNames } from 'utils/classNames'
 import Icon from './Icon'
-
-import { classNames } from '../../utils/classNames'
 
 interface ICheckboxProps {
   checked: boolean

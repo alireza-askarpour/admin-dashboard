@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import ReactApexChart from 'react-apexcharts'
-
 import Icon from '../../Shared/Icon'
 
 interface ISeries {

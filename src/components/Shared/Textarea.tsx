@@ -1,6 +1,5 @@
 import { ChangeEvent } from 'react'
-
-import { classNames } from '../../utils/classNames'
+import { classNames } from 'utils/classNames'
 
 interface ITextareaProps {
   id: string
