@@ -4,6 +4,14 @@
 ![Admin Dashboard - Alireza Askarpour](https://i.ibb.co/wLHMLvY/vuexy-2.png)
 ![Admin Dashboard - Alireza Askarpour](https://i.ibb.co/1vTfGYZ/vuexy-3.png)
 
+## Features
+
+- [x] Chart
+- [x] Add task
+- [x] Edit task
+- [x] Remove task
+- [x] Filter task
+
 ## Technologies
 
 - [React](https://reactjs.org)
