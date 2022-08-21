@@ -11,6 +11,7 @@
 - [x] Edit task
 - [x] Remove task
 - [x] Filter task
+- [x] Invoice list
 
 ## Technologies
 
